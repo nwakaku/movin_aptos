@@ -44,7 +44,7 @@ TurboGo isn't just an educational platform; it's a high-speed journey through th
 
 ## Technology Stack
 
-- **Frontend**: Next.js with TypeScript, TailwindCSS
+- **Frontend**: Vite.js with TypeScript, TailwindCSS
 - **Backend**: Node.js
 - **SmartContract**: Move
 - **Database**: MongoDB

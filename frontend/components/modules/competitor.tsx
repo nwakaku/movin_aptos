@@ -187,12 +187,15 @@ export const Competitor = () => {
               </div>
               <div className="space-y-0 w-fit bg-gray-200 rounded-md p-2 text-black">
                 <div className="flex space-x-2 items-center">
-                  <img src="/icons/car.svg" className="h-6 w-6" />
+                  <img
+                    src="https://res.cloudinary.com/dgbreoalg/image/upload/v1728734246/car_dxdbfv.svg"
+                    className="h-6 w-6"
+                  />
                   <p className="text-sm font-semibold">
-                    {userLevel > index 
-                      ? "10 Points" 
-                      : index === userLevel 
-                        ? `${(turboBalance - MODULE_START_POINTS) % POINTS_PER_LEVEL} Points` 
+                    {userLevel > index
+                      ? "10 Points"
+                      : index === userLevel
+                        ? `${(turboBalance - MODULE_START_POINTS) % POINTS_PER_LEVEL} Points`
                         : "0 Points"}
                     <span className="text-xs text-gray-600"> out of 10</span>
                   </p>

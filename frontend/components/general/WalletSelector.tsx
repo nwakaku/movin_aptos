@@ -11,7 +11,7 @@ import {
   truncateAddress,
   useWallet,
 } from "@aptos-labs/wallet-adapter-react";
-import { ArrowLeft, ArrowRight, ChevronDown, Copy, LogOut, User } from "lucide-react";
+import { ArrowLeft, ArrowRight, ChevronDown, Copy, LogOut, User, User2 } from "lucide-react";
 import { useCallback, useState } from "react";
 // Internal components
 import { Button } from "@/components/ui/button";
@@ -24,6 +24,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useToast } from "@/components/ui/use-toast";
+import { useNavigate, useNavigation } from "react-router-dom";
 
 export function WalletSelector() {
   const { account, connected, disconnect, wallet } = useWallet();
@@ -49,14 +50,17 @@ export function WalletSelector() {
     }
   }, [account?.address, toast]);
 
+  const navigated = useNavigate()
+
+
   return connected ? (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button>{account?.ansName || truncateAddress(account?.address) || "Unknown"}</Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onSelect={copyAddress} className="gap-2">
-          <Copy className="h-4 w-4" /> My Profile
+        <DropdownMenuItem onSelect={() => navigated("/profile")} className="gap-2">
+          <User2 className="h-4 w-4" /> My Profile
         </DropdownMenuItem>
         <DropdownMenuItem onSelect={copyAddress} className="gap-2">
           <Copy className="h-4 w-4" /> Copy address
