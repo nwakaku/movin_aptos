@@ -21,7 +21,7 @@ TurboGo is a gamified learning platform for the Aptos blockchain. It's designed 
 
 ### Our Approach
 
-Imagine a virtual racing academy where each learning module is an exciting "race track," and challenging quests are "hairpin turns" waiting to be mastered. As users progress, they earn "Turbo Tokens" (points) and advance from "Rookie Driver" to "Speed Demon" to "Grand Prix Champion."
+Imagine a virtual racing academy where each learning module is an exciting "race track," and challenging quests are "hairpin turns" waiting to be mastered. As users progress, they earn "Turbo Tokens" (points) and advance from "Rookie Driver" to "Speed Angel" to "Grand Prix Champion."
 
 TurboGo isn't just an educational platform; it's a high-speed journey through the Aptos ecosystem, where learning feels like crossing the finish line in first place.
 
